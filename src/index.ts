@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
                 <meta property="twitter:url" content="https://dip.qwq.sh/">
                 <meta property="twitter:title" content="index.html">
                 <meta property="twitter:description" content="">
-                <meta property="twitter:image" content="”/image.jpg”">
+                <meta property="twitter:image" content="https://dip.qwq.sh//image.jpg">
                 <title>index.html</title>
             </head>
             <body>
