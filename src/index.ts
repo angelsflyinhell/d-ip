@@ -1,5 +1,7 @@
 import express from 'express';
 import requestIp from 'request-ip';
+import fs from 'fs';
+import stream from 'stream';
 
 const app = express();
 const port = 3000;
@@ -14,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`d-ip listening at http://localhost:${port}`)
 });
 
 app.get('/', (req, res) => {
@@ -23,6 +25,7 @@ app.get('/', (req, res) => {
     res.send(`
         <html>
             <head>
+                <meta property="og:image" content=”/image.jpg” />
                 <meta http-equiv="content-Type" content="text/html; utf-8" />
                 <meta http-equiv="Pragma" content="no-cache" />
                 <meta name="robots" content="NOINDEX,NOFOLLOW" />
@@ -42,4 +45,8 @@ app.get('/', (req, res) => {
             </body>
         </html>
     `);
+});
+
+app.get('/image.jpg', (req, res) => {
+    res.sendFile(__dirname + '/image.jpg');
 });
