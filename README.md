@@ -3,4 +3,4 @@
 
 # Working
 - IP through embeds `[NO]` 
-- IP through embed image `[TBD]` 
+- IP through embed image `[NO]` 
