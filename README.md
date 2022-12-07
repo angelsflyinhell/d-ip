@@ -1,5 +1,5 @@
 # d-ip
- Proof of concept for logging IPs with Discord link embeds.
+ Testing different techniques to grab someone's IP over Discord.
 
 # Working
 - IP through embeds `[NO]` 
