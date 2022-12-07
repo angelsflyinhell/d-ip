@@ -40,5 +40,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/image.jpg', (req, res) => {
+    console.log(req.clientIp);
     res.sendFile(__dirname + '/image.jpg');
 });
