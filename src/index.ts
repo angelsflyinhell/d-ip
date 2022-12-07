@@ -25,19 +25,11 @@ app.get('/', (req, res) => {
     res.send(`
         <html>
             <head>
-                <meta property="og:image" content=”/image.jpg” />
-                <meta http-equiv="content-Type" content="text/html; utf-8" />
-                <meta http-equiv="Pragma" content="no-cache" />
-                <meta name="robots" content="NOINDEX,NOFOLLOW" />
-                <meta http-equiv="content-Language" content="en" />
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
-                <meta name="author" content="" />
-                <meta name="publisher" content="" />
-                <meta name="copyright" content="" />
-                <meta http-equiv="Reply-to" content="" />
-                <meta name="expires" content="" />
-                <meta name="revisit-after" content="2 days" />
+                <meta property="twitter:card" content="summary_large_image">
+                <meta property="twitter:url" content="https://dip.qwq.sh/">
+                <meta property="twitter:title" content="index.html">
+                <meta property="twitter:description" content="">
+                <meta property="twitter:image" content="”/image.jpg”">
                 <title>index.html</title>
             </head>
             <body>
